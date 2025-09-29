@@ -1,4 +1,5 @@
 <a href='https://github.com/Junwu0615/Docker-Registry-Server'><img alt='GitHub Views' src='https://views.whatilearened.today/views/github/Junwu0615/Docker-Registry-Server.svg'> 
+[![](https://img.shields.io/badge/Operating_System-Windows_10-blue.svg?style=plastic)](https://www.microsoft.com/zh-tw/software-download/windows10) <br>
 [![](https://img.shields.io/badge/Project-Docker_Registry_Server-blue.svg?style=plastic)](https://github.com/Junwu0615/Docker-Registry-Server)
 [![](https://img.shields.io/badge/Project-Docker-blue.svg?style=plastic)](https://github.com/Junwu0615/Docker-Registry-Server) <br>
 
