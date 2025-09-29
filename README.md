@@ -1,4 +1,5 @@
 <a href='https://github.com/Junwu0615/Docker-Registry-Server'><img alt='GitHub Views' src='https://views.whatilearened.today/views/github/Junwu0615/Docker-Registry-Server.svg'> 
+[![](https://img.shields.io/badge/Project-Docker_Registry_Server-blue.svg?style=plastic)](https://github.com/Junwu0615/Docker-Registry-Server)
 [![](https://img.shields.io/badge/Project-Docker-blue.svg?style=plastic)](https://github.com/Junwu0615/Docker-Registry-Server) <br>
 
 <br>
@@ -9,6 +10,9 @@
 |項目|敘述|完成時間|
 |:--:|:--:|:--:|
 | 專案上架 | - | 2025-09-29 |
+| 成功啟動服務 | - | 2025-09-29 |
+| 成功上傳服務 | - | 2025-09-29 |
+
 
 <br>
 
@@ -44,20 +48,27 @@
   ```bash
   docker ps -a
   ```
-  
-- #### *檢視資料持久化清單*
-  ```bash
-  docker volume ls
-  ```
 
 - #### *關閉服務*
   ```bash
   docker-compose down
   ```
 
-- #### *[ 不建議 ] 關閉服務並清除 Volume*
+<br>
+
+### *D.　上傳服務測試*
+- #### *檢視欲推送的 Images 項目*
   ```bash
-  docker-compose down -v
+  docker images -a
   ```
 
-<br>
+- #### *標記一個映像檔*
+  ```bash
+  docker tag forex-get-quotes localhost:5000/forex-get-quotes:latest
+  ```
+
+- #### *推送映像檔*
+  ```bash
+  docker push localhost:5000/forex-get-quotes:latest
+  ```
+- ![PNG](./sample/push.PNG)
