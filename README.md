@@ -31,7 +31,7 @@
     },
     "experimental": false,
     "insecure-registries": [
-      "localhost:5000"
+      "host.docker.internal:5000"
     ]
   }
   ```
