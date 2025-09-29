@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  registry:
+    image: registry:2
+    container_name: private_docker_registry
+    ports:
+      - "5000:5000"
+
+    volumes:
+      - D:\docker\registry:/var/lib/registry
+      
+      # 可選：如果需要啟用 HTTPS/TLS，可以在這裡掛載你的憑證檔案
+      # - ./certs:/certs
+      
+    mem_limit: 512m
+    restart: always
