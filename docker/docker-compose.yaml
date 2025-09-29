@@ -8,7 +8,7 @@ services:
       - "5000:5000"
 
     volumes:
-      - D:\docker\registry:/var/lib/registry
+      - D:\docker\registry:/var/lib/registry/docker/registry
       
       # 可選：如果需要啟用 HTTPS/TLS，可以在這裡掛載你的憑證檔案
       # - ./certs:/certs
